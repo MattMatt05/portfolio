@@ -129,6 +129,21 @@ img {
     z-index: -1;
 }
 
+.medium-circle {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 70px;
+    height: 70px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(-70%, 100%);
+}
+
+.triangle-1 {
+    
+}
+
 .visualizeMe img {
     width: 440px;
     user-select: none;
