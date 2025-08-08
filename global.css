@@ -116,14 +116,26 @@ img {
     align-self: end;
 }
 
+.semicircle {
+    position: absolute;
+    background-color: var(--font-color);
+    width: 350px;
+    height: 550px;
+    display: block;
+    border-top-left-radius: 2000px;
+    border-bottom-left-radius: 2000px;
+    bottom: 0;
+    transform: translateX(-24%);
+    z-index: -1;
+}
+
 .visualizeMe img {
     width: 440px;
     user-select: none;
-     display: block;
+    display: block;
 }
 
 .introSegment {
-    background-color: var(--bg-color);
     height: 670px;
     border-bottom-style: solid;
     border-bottom-color: var(--font-color);
