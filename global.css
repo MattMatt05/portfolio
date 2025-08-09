@@ -49,6 +49,18 @@ img {
     }
 }
 
+@keyframes dropInShape {
+    from {
+        opacity: 0;
+        transform: translateY(calc(100% - 20px));
+    }
+
+    to {
+        opacity: 1;
+        transform: 100%;
+    }
+}
+
 .navbar .flex {
     justify-content: space-between;
 }
@@ -117,8 +129,6 @@ img {
     align-self: end;
 }
 
-.triangle-1 {}
-
 .semicircle {
     position: absolute;
     background-color: var(--font-color);
@@ -149,7 +159,8 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(60%, 480%);
+    transform: translate(62%, 470%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-2 {
@@ -158,7 +169,8 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(44%, 230%);
+    transform: translate(40%, 230%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-3 {
@@ -168,6 +180,7 @@ img {
     width: 60px;
     height: 60px;
     transform: rotate(45deg) translate(38%, 30%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-4 {
@@ -176,7 +189,8 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(60%, 480%);
+    transform: rotate(70deg) translate(60%, -180%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-5 {
@@ -185,7 +199,8 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(60%, 480%);
+    transform: rotate(10deg) translate(36%, 410%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-6 {
@@ -194,7 +209,8 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(60%, 480%);
+    transform: rotate(-30deg) translate(4%, 710%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-7 {
@@ -203,7 +219,8 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(60%, 480%);
+    transform: rotate(23deg) translate(94%, 400%);
+    animation: dropInShape 1s ease-out forwards;
 }
 
 .triangle-8 {
@@ -212,7 +229,85 @@ img {
     top: 0;
     width: 60px;
     height: 60px;
-    transform: translate(60%, 480%);
+    transform: translate(60%, 850%);
+    animation: dropInShape 1s ease-out forwards;
+}
+
+.circle-1 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(970%, 465%);
+}
+
+.circle-2 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(690%, 450%);
+}
+
+.circle-3 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(840%, 640%);
+}
+
+.circle-4 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(840%, 640%);
+}
+
+.circle-5 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(1050%, 960%);
+}
+
+.circle-6 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(930%, 1000%);
+}
+
+.circle-7 {
+    border-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 46px;
+    background-color: var(--font-color);
+    top: 0;
+    transform: translate(930%, 1270%);
 }
 
 .visualizeMe img {
