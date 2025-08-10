@@ -160,6 +160,8 @@ img {
     width: 60px;
     height: 60px;
     animation: dropInShape 1s ease-out forwards;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
     isolation: isolate;
@@ -205,8 +207,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(970%, 465%) translateZ(0);
-    isolation: isolate;
+    transform: translate(970%, 465%);
 }
 
 .circle-2 {
@@ -217,9 +218,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(690%, 450%) translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
+    transform: translate(690%, 450%);
 }
 
 .circle-3 {
@@ -230,9 +229,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(840%, 640%) translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
+    transform: translate(840%, 640%);
 }
 
 .circle-4 {
@@ -243,9 +240,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(840%, 640%) translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
+    transform: translate(840%, 640%);
 }
 
 .circle-5 {
@@ -256,9 +251,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(1050%, 960%) translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
+    transform: translate(1050%, 960%);
 }
 
 .circle-6 {
@@ -269,9 +262,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(930%, 1000%) translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
+    transform: translate(930%, 1000%);
 }
 
 .circle-7 {
@@ -282,9 +273,7 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(930%, 1270%) translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
+    transform: translate(930%, 1270%);
 }
 
 .visualizeMe img {
