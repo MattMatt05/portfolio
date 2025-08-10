@@ -155,19 +155,11 @@ img {
 
 .triangle {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     top: 0;
     width: 60px;
     height: 60px;
     animation: dropInShape 1s ease-out forwards;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    isolation: isolate;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    image-rendering: -webkit-optimize-contrast;
 }
 
 .triangle-1 {
@@ -334,4 +326,12 @@ img {
 
 .introText a:hover {
     background: #7B9E87;
+}
+
+/*Mehistory*/
+
+.line1 {
+    height: 4px;
+    width: 1fr;
+    background-color: #7B9E87;
 }
