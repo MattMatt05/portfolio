@@ -161,6 +161,7 @@ img {
     height: 60px;
     transform: translate(62%, 470%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-2 {
@@ -171,6 +172,7 @@ img {
     height: 60px;
     transform: translate(40%, 230%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-3 {
@@ -181,6 +183,7 @@ img {
     height: 60px;
     transform: rotate(45deg) translate(38%, 30%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-4 {
@@ -191,6 +194,7 @@ img {
     height: 60px;
     transform: rotate(70deg) translate(60%, -180%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-5 {
@@ -201,6 +205,7 @@ img {
     height: 60px;
     transform: rotate(10deg) translate(36%, 410%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-6 {
@@ -211,6 +216,7 @@ img {
     height: 60px;
     transform: rotate(-30deg) translate(4%, 710%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-7 {
@@ -221,6 +227,7 @@ img {
     height: 60px;
     transform: rotate(23deg) translate(94%, 400%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .triangle-8 {
@@ -231,6 +238,7 @@ img {
     height: 60px;
     transform: translate(60%, 850%);
     animation: dropInShape 1s ease-out forwards;
+    shape-rendering: crispEdges;
 }
 
 .circle-1 {
