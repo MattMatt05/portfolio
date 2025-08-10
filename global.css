@@ -160,34 +160,35 @@ img {
     width: 60px;
     height: 60px;
     animation: dropInShape 1s ease-out forwards;
+    will-change: transform;
 }
 
 .triangle-1 {
-    transform: translate(62%, 470%) translateZ(0.001px);
+    transform: translate(62%, 470%);
 }
 
 .triangle-2 {
-    transform: translate(40%, 230%) translateZ(0.001px);
+    transform: translate(40%, 230%);
 }
 
 .triangle-3 {
-    transform: rotate(45deg) translate(38%, 30%) translateZ(0.001px);
+    transform: rotate(45deg) translate(38%, 30%);
 }
 
 .triangle-4 {
-    transform: rotate(70deg) translate(60%, -180%) translateZ(0.001px);
+    transform: rotate(70deg) translate(60%, -180%);
 }
 
 .triangle-5 {
-    transform: rotate(10deg) translate(36%, 410%) translateZ(0.001px);
+    transform: rotate(10deg) translate(36%, 410%);
 }
 
 .triangle-6 {
-    transform: rotate(-30deg) translate(4%, 710%) translateZ(0.001px);
+    transform: rotate(-30deg) translate(4%, 710%);
 }
 
 .triangle-7 {
-    transform: rotate(23deg) translate(94%, 400%) translateZ(0.001px);
+    transform: rotate(23deg) translate(94%, 400%);
 }
 
 .triangle-8 {
