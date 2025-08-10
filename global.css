@@ -216,7 +216,7 @@ img {
     height: 60px;
     transform: rotate(-30deg) translate(4%, 710%);
     animation: dropInShape 1s ease-out forwards;
-    shape-rendering: crispEdges;
+    image-rendering: auto;
 }
 
 .triangle-7 {
@@ -227,7 +227,7 @@ img {
     height: 60px;
     transform: rotate(23deg) translate(94%, 400%);
     animation: dropInShape 1s ease-out forwards;
-    shape-rendering: crispEdges;
+    image-rendering: auto;
 }
 
 .triangle-8 {
@@ -238,7 +238,7 @@ img {
     height: 60px;
     transform: translate(60%, 850%);
     animation: dropInShape 1s ease-out forwards;
-    shape-rendering: crispEdges;
+    image-rendering: auto;
 }
 
 .circle-1 {
@@ -250,6 +250,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(970%, 465%);
+    image-rendering: auto;
 }
 
 .circle-2 {
@@ -261,6 +262,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(690%, 450%);
+    image-rendering: auto;
 }
 
 .circle-3 {
@@ -272,6 +274,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(840%, 640%);
+    image-rendering: auto;
 }
 
 .circle-4 {
@@ -283,6 +286,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(840%, 640%);
+    image-rendering: auto;
 }
 
 .circle-5 {
@@ -294,6 +298,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(1050%, 960%);
+    image-rendering: auto;
 }
 
 .circle-6 {
@@ -305,6 +310,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(930%, 1000%);
+    image-rendering: auto;
 }
 
 .circle-7 {
@@ -316,6 +322,7 @@ img {
     background-color: var(--font-color);
     top: 0;
     transform: translate(930%, 1270%);
+    image-rendering: auto;
 }
 
 .visualizeMe img {
