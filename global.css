@@ -160,7 +160,8 @@ img {
     width: 60px;
     height: 60px;
     animation: dropInShape 1s ease-out forwards;
-    will-change: transform;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .triangle-1 {
@@ -192,14 +193,7 @@ img {
 }
 
 .triangle-8 {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    width: 60px;
-    height: 60px;
     transform: translate(60%, 850%) translateZ(0.001px);
-    animation: dropInShape 1s ease-out forwards;
-    image-rendering: auto;
 }
 
 .circle-1 {
