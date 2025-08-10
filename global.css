@@ -160,8 +160,9 @@ img {
     width: 60px;
     height: 60px;
     animation: dropInShape 1s ease-out forwards;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .triangle-1 {
@@ -204,8 +205,8 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(970%, 465%);
-    image-rendering: auto;
+    transform: translate(970%, 465%) translateZ(0);
+    isolation: isolate;
 }
 
 .circle-2 {
@@ -216,7 +217,9 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(690%, 450%);
+    transform: translate(690%, 450%) translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .circle-3 {
@@ -227,7 +230,9 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(840%, 640%);
+    transform: translate(840%, 640%) translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .circle-4 {
@@ -238,7 +243,9 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(840%, 640%);
+    transform: translate(840%, 640%) translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .circle-5 {
@@ -249,7 +256,9 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(1050%, 960%);
+    transform: translate(1050%, 960%) translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .circle-6 {
@@ -260,7 +269,9 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(930%, 1000%);
+    transform: translate(930%, 1000%) translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .circle-7 {
@@ -271,7 +282,9 @@ img {
     height: 46px;
     background-color: var(--font-color);
     top: 0;
-    transform: translate(930%, 1270%);
+    transform: translate(930%, 1270%) translateZ(0);
+    -webkit-transform: translateZ(0);
+    isolation: isolate;
 }
 
 .visualizeMe img {
