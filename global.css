@@ -30,6 +30,8 @@ img {
 /*Navigation Bar Elements*/
 .navbar {
     position: sticky;
+    top: 0;
+    z-index: 2;
     background-color: var(--bg-color);
     height: 50px;
     border-bottom-style: solid;
@@ -329,9 +331,35 @@ img {
 }
 
 /*Mehistory*/
+.about-line {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    border-right-color: var(--font-color);
+    width: calc(100vw - 15px);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
 
-.line1 {
-    height: 4px;
-    width: 1fr;
-    background-color: #7B9E87;
+.about-line::before {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background-color: var(--font-color);
+}
+
+.about-line::after {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background-color: var(--font-color);
+}
+
+.photo-frame {
+    border: 6px solid var(--font-color);
+    width: 350px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 70px;
 }
