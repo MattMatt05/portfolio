@@ -357,7 +357,7 @@ img {
     background-color: var(--font-color);
 }
 
-.photo-frame {
+.mintro img {
     border: 6px solid var(--font-color);
     width: 350px;
     border-radius: 70px;
