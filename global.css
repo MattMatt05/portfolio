@@ -360,6 +360,5 @@ img {
 .photo-frame {
     border: 6px solid var(--font-color);
     width: 350px;
-    padding: 0px 0px 0px 0px;
     border-radius: 70px;
 }
