@@ -440,6 +440,8 @@ img {
     }
     
     .eduSection .parText {
+        width: 80%; 
+        max-width: none;
         font-size: 2em;
         line-height: 1.5;
         margin: 0 auto;
