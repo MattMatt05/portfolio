@@ -411,10 +411,26 @@ img {
     height: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 428px) {
     .mintro {
-        grid-template-columns: 1fr;
-        height: auto;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        height: auto; 
+        gap: 15px; 
+    }
+    
+    .eduSection {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        text-align: center;
+    }
+    
+    .eduSection p {
+        font-size: 1.2em;
+    }
+    
+    .eduSection h2 {
+        font-size: 1.3em;
     }
 }
 
