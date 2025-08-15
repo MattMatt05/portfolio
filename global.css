@@ -411,26 +411,45 @@ img {
     height: 100%;
 }
 
-@media (max-width: 428px) {
+.mintro {
+    display: grid;
+    grid-template-columns: 4fr 4fr 5fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 1300px) {
     .mintro {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto; 
-        height: auto; 
-        gap: 15px; 
+        height: auto;
+        gap: 15px;
     }
     
     .eduSection {
         grid-column: 1 / -1;
         grid-row: 2;
         text-align: center;
+        padding: 20px;
     }
     
-    .eduSection p {
-        font-size: 1.2em;
+    .eduSection .sectionTitle {
+        font-size: 1.4em;
+        margin-bottom: 15px;
     }
     
-    .eduSection h2 {
-        font-size: 1.3em;
+    .eduSection .parText {
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
+    
+    .eduSection .shapeStorage {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 300px;
     }
 }
 
