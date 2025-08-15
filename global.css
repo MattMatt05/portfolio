@@ -295,6 +295,15 @@ img {
     animation: dropIn 2s ease-out forwards;
 }
 
+.introText u {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: #7B9E87;
+    text-decoration-thickness: 8%;
+    text-underline-offset: 16%;
+}
+
 .introText h1 {
     font-size: 90px;
     margin-bottom: 20px;
@@ -399,7 +408,6 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    max-width: 500px;
 }
 
 .mintro {
@@ -510,7 +518,7 @@ img {
 
 .meBack {
     display: grid;
-    grid-template-columns: 4fr 4fr 5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -518,7 +526,8 @@ img {
 }
 
 .backSection {
-    margin: 20px;
+    margin: 0 auto;
+    margin-left: 50px;
 }
 
 .about-right {
