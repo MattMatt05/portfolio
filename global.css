@@ -412,7 +412,7 @@ img {
 }
 
 @media (max-width: 480px) {
-    .large-div {
+    .mintro {
         grid-template-columns: 1fr;
         height: auto;
     }
