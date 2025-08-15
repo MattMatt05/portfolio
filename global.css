@@ -420,7 +420,7 @@ img {
     height: 100%;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .mintro {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto; 
@@ -436,13 +436,13 @@ img {
     }
     
     .eduSection .sectionTitle {
-        font-size: 1.4em;
         margin-bottom: 15px;
     }
     
     .eduSection .parText {
-        font-size: 1.1em;
+        font-size: 1.5em;
         line-height: 1.5;
+        margin: 0 auto;
     }
     
     .eduSection .shapeStorage {
@@ -451,12 +451,16 @@ img {
         margin-right: auto !important;
         max-width: 300px;
     }
+
+    .imageInfo p {
+        font-size: 1.2em;
+    }
 }
 
 .sectionTitle {
     font-size: 30px;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-family: 'Bebas Neue', sans-serif;
     text-decoration-line: underline;
     text-decoration-style: solid;
