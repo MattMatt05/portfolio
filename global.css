@@ -285,7 +285,6 @@ img {
     border-bottom-color: var(--font-color);
     position: relative;
     align-content: center;
-    /*Allows for abosolute positioning within*/
 }
 
 .introText {
@@ -408,15 +407,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.mintro {
-    display: grid;
-    grid-template-columns: 4fr 4fr 5fr;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    max-width: 500px;
 }
 
 .mintro {
@@ -431,42 +422,246 @@ img {
 @media (max-width: 1400px) {
     .mintro {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto; 
+        grid-template-rows: auto auto;
         height: auto;
         gap: 15px;
     }
-    
-    .eduSection {
+
+    .mintro .eduSection {
         grid-column: 1 / -1;
         grid-row: 2;
         text-align: center;
         padding: 20px;
     }
-    
-    .eduSection .sectionTitle {
+
+    .mintro .eduSection .sectionTitle {
         margin-bottom: 15px;
     }
-    
-    .eduSection .parText {
-        width: 80%; 
+
+    .mintro .eduSection .parText {
+        width: 80%;
         max-width: none;
         font-size: 2em;
         line-height: 1.5;
         margin: 0 auto;
     }
-    
-    .eduSection .shapeStorage {
+
+    .mintro .eduSection .shapeStorage {
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important;
         max-width: 300px;
-        margin-bottom: 60px
+        margin-bottom: 60px;
     }
 
-    .imageInfo p {
+    .mintro .imageInfo p {
         font-size: 1.4em;
     }
+
+    .mintro .imageInfo .storyImg {
+        max-width: 350px;
+    }
 }
+
+.meBack {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.backSection {
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+@media (max-width: 1400px) {
+    .meBack {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .meBack .backSection {
+        grid-column: 1 / -1; 
+        grid-row: 2; 
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .meBack .backSection .parText {
+        font-size: 2em;
+        line-height: 1.5;
+        max-width: 100% !important;
+
+    }
+
+    .meBack .middleContent {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 200px;
+    }
+
+    .meBack .imageInfo {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .meBack .imageInfo .storyImg {
+        width: 350px;
+        transform: translateX(200px);
+    }
+
+    .meBack .imageInfo p {
+        font-size: 1.5em;
+        margin-top: 15px;
+        transform: translateX(200px) !important;
+    }
+
+    .meBack .middleContent .shapen {
+        width: 40px;
+        height: 40px;
+    }
+
+    .meBack .middleContent .circle-intro {
+        width: 30px;
+        height: 30px;
+    }
+
+    .meBack .middleContent img[style*="transform: translateX(200px)"] {
+        transform: translateX(50px) !important;
+    }
+
+    .meBack .middleContent div[style*="transform: translateX(100px)"] {
+        transform: translateX(30px) !important;
+    }
+
+    .meBack .middleContent div[style*="transform: translateY(-200px) translateX(230px)"] {
+        transform: translateY(-50px) translateX(60px) !important;
+    }
+}
+
+.meInterest {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-left {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    border-right-color: var(--font-color);
+    width: calc(100vw - 15px);
+    margin-bottom: 30px;
+}
+
+.about-left::before {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background-color: var(--font-color);
+    margin-right: 20px;
+}
+
+.about-left::after {
+    content: '';
+    flex: 3;
+    height: 3px;
+    background-color: var(--font-color);
+    margin-left: 20px;
+}
+
+@media (max-width: 1400px) {
+    .meInterest {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .meInterest .backSection {
+        grid-column: 1 / -1; 
+        grid-row: 2; 
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .meInterest .backSection .parText {
+        font-size: 1.2em;
+        line-height: 1.5;
+        max-width: 100% !important;
+    }
+
+    .meInterest .middleContent {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 200px;
+    }
+
+    .meInterest .imageInfo {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .meInterest .imageInfo .storyImg {
+        max-width: 350px;
+    }
+
+    .meInterest .imageInfo p {
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+
+    .meInterest .middleContent .shapen {
+        width: 40px;
+        height: 40px;
+    }
+
+    .meInterest .middleContent .circle-intro {
+        width: 30px;
+        height: 30px;
+    }
+
+    .meInterest .middleContent img[style*="transform: translateX(250%)"] {
+        transform: translateX(50px) !important;
+    }
+
+    .meInterest .middleContent img[style*="transform: translateX(-60px) rotate(180deg)"] {
+        transform: translateX(-20px) rotate(180deg) !important;
+    }
+
+    .meInterest .middleContent div[style*="transform: translateX(60px)"] {
+        transform: translateX(20px) !important;
+    }
+
+    .meInterest .middleContent img[style*="transform: translateX(20px) rotate(180deg)"] {
+        transform: translateX(10px) rotate(180deg) !important;
+    }
+}
+
 
 .sectionTitle {
     font-size: 30px;
@@ -518,7 +713,7 @@ img {
 
 .meBack {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -561,7 +756,7 @@ img {
 
 .meInterest {
     display: grid;
-    grid-template-columns: 4fr 4fr 5fr;
+    grid-template-columns: 2fr 1fr 3fr;
     gap: 10px;
     justify-content: center;
     align-items: center;
