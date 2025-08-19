@@ -492,8 +492,8 @@ img {
     }
 
     .meBack .backSection {
-        grid-column: 1 / -1; 
-        grid-row: 2; 
+        grid-column: 1 / -1;
+        grid-row: 2;
         text-align: center;
         margin: 0 auto;
         max-width: 800px;
@@ -596,8 +596,8 @@ img {
     }
 
     .meInterest .backSection {
-        grid-column: 1 / -1; 
-        grid-row: 2; 
+        grid-column: 1 / -1;
+        grid-row: 2;
         text-align: center;
         margin: 0 auto;
         max-width: 800px;
@@ -778,4 +778,76 @@ img {
     height: 3px;
     background-color: var(--font-color);
     margin-left: 20px;
+}
+
+/*My Work*/
+
+.top-circle {
+    border-radius: 500px;
+    z-index: -1;
+    width: 70px;
+    height: 70px;
+    background-color: var(--font-color);
+    top: 0;
+    margin: 0 auto;
+}
+
+.center-line {
+    height: 1000px;
+    width: 5px;
+    background-color: var(--font-color);
+    margin: 0 auto;
+    transform: translateY(-10px);
+}
+
+.horizontal-line {
+    height: 5px;
+    width: 25%;
+    background-color: var(--font-color);
+    position: absolute;
+}
+
+.pointer-line {
+    height: 55px;
+    width: 5px;
+    background-color: var(--font-color);
+    margin: 0 auto;
+}
+
+#myWork {
+    overflow: hidden;
+}
+
+.workShown {
+    width: 450px;
+    height: 270px;
+}
+
+.pointGroup {
+    width: 450px;
+    height: 400px;
+    position: absolute;
+}
+
+.picTitle {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: #7B9E87;
+    text-decoration-thickness: 8%;
+    text-underline-offset: 25%;
+    text-align: center;
+    transform: translateY(-10px);
+}
+
+/*Footer*/
+
+footer {
+    height: 300px;
+    background-color: var(--font-color);
 }
