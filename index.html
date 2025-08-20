@@ -192,19 +192,41 @@
                     algorithmic thinking, clean code architecture, and problem-solving skills by translating
                     mathematical game theory into a functional turn-based system with proper state management and user
                     interaction handling.</p>
+                <div style="position: absolute; margin-top: 150px;">
+                    <svg width="400px" height="150">
+                        <path class="sineWave" id="sineWave"></path>
+                    </svg>
+                </div>
             </div>
 
-            <img src="assets/box.svg" class="triangle-9 float" style="width: 70px; height: 70px; 
-            position: absolute; left: 400px; top: 2600px">
-            <img src="assets/triangle.svg" class="shapen triangle-9 float"
-                style="transform: rotate(45deg); margin-left: 70px; position: absolute; left: 300px; top: 2800px">
-            <div class="circle-intro float" style="margin: 20px; position: absolute; left: 200px; top: 2800px"
-                onerror="this.style.display='none'">
-            </div>
-            <img src="assets/triangle.svg" class="shapen triangle-9 float"
-                style="transform: rotate(180deg); margin-left: 70px; position: absolute; left: 200px; top: 2800px">
-            <div class="circle-intro float" style="margin-left: 100px; position: absolute; left: 200px; top: 2500px"
-                onerror="this.style.display='none'">
+            <div style="position: absolute;  transform: translateY(-3550px) translateX(280px);">
+                <img src="assets/box.svg" class="triangle-9 float" style="width: 70px; height: 70px;">
+                <img src="assets/triangle.svg" class="shapen triangle-9 float"
+                    style="transform: rotate(45deg); margin-left: 70px;">
+                <div style="transform: translateX(-100px)">
+                    <div class="circle-intro float" onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div style="transform: translateX(-200px)">
+                    <div class="circle-intro float" onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="float">
+                    <img src="assets/box.svg" class="triangle-9"
+                        style="width: 70px; height: 70px; transform: rotate(45deg);">
+                </div>
+                <div style="transform: translateX(-200px)">
+                    <div class="float">
+                        <img src="assets/box.svg" class="triangle-9"
+                            style="width: 70px; height: 70px; transform: rotate(30deg);">
+                    </div>
+                </div>
+                <div class="float">
+                    <img src="assets/triangle.svg" class="shapen triangle-9"
+                        style="transform: rotate(180deg); margin-left: 70px;">
+                </div>
+                <div class="circle-intro float" style="margin-left: 100px;" onerror="this.style.display='none'">
+                </div>
             </div>
 
             <!--Family Tree Software-->
@@ -222,6 +244,7 @@
                     a scrollable interface component when dynamic data wasn't displaying properly, demonstrating my
                     capacity to debug complex UI issues and deliver scalable solutions.</p>
             </div>
+
 
             <!--Star Position Mapper-->
             <div class="horizontal-line" style="transform: translateY(-2400px); left: 50%;"></div>
@@ -292,5 +315,24 @@
 
     </footer>
 </body>
+
+<script>
+    let time = 0;
+
+    function drawSine() {
+        let path = 'M 0 75';
+
+        for (let x = 0; x <= 600; x += 2) {
+            let y = 75 + 30 * Math.sin(x * 0.02 + time * 0.05);
+            path += ` L ${x} ${y}`;
+        }
+
+        document.getElementById('sineWave').setAttribute('d', path);
+        time += 1;
+        requestAnimationFrame(drawSine);
+    }
+
+    drawSine();
+</script>
 
 </HTML>

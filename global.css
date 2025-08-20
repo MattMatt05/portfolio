@@ -877,6 +877,17 @@ img {
     word-wrap: break-word;
 }
 
+.svg {
+    border: 1px solid var(--font-color);
+}
+
+.sineWave {
+            stroke: var(--font-color);
+            stroke-width: 2;
+            fill: none;
+            filter: drop-shadow(0 0 5px var(--font-color));
+        }
+
 /*Footer*/
 
 footer {
