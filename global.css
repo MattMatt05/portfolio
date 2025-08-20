@@ -785,15 +785,19 @@ img {
     position: absolute;
 }
 
+.float {
+    animation: floating 3s ease-in-out infinite;
+}
+
 @keyframes floating {
 
     0%,
     100% {
-        transform: translateY(-3500px);
+        transform: translateY(0px);
     }
 
     50% {
-        transform: translateY(-3480px);
+        transform: translateY(-10px);
     }
 }
 
@@ -876,6 +880,6 @@ img {
 /*Footer*/
 
 footer {
-    height: 300px;
+    height: 200px;
     background-color: var(--font-color);
 }
