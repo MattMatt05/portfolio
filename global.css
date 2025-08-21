@@ -11,7 +11,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
 }
 
 body {
@@ -131,6 +130,14 @@ img {
 }
 
 /*Intro segment*/
+#aboutMe {
+    scroll-margin-top: 70px;
+}
+
+#myWork {
+    scroll-margin-top: 130px;
+}
+
 .visualDesign {
     margin: 0 auto;
     align-self: end;
