@@ -883,6 +883,8 @@ img {
 
 .svg {
     border: 1px solid var(--font-color);
+    max-width: 100%;
+    height: auto;
 }
 
 .sineWave {
