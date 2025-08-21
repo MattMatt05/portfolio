@@ -328,31 +328,6 @@
                     luminosity, radius, absolute magnitude), demonstrating team-based machine learning development,
                     statistical analysis, and scientific research methodology through rigorous data analysis and
                     comprehensive documentation of model development and validation.</p>
-                <div style="margin-top: 20px;">
-                    <img src="assets/box.svg" class="triangle-9 float" style="width: 70px; height: 70px;">
-                    <img src="assets/box.svg" class="triangle-9 float"
-                        style="transform: rotate(45deg); margin-left: 70px; width: 70px; height: 70px;">
-                    <div style="transform: translateX(200px)">
-                        <div class="circle-intro float" onerror="this.style.display='none'">
-                        </div>
-                    </div>
-                    <div style="transform: translateX(340px)">
-                        <div class="float">
-                            <img src="assets/triangle.svg" class="triangle-9"
-                                style="width: 60px; height: 60px; transform: rotate(30deg);">
-                        </div>
-                    </div>
-                    <div style="transform: translateX(180px)">
-                        <div class="circle-intro float" onerror="this.style.display='none'">
-                        </div>
-                    </div>
-                    <div style="transform: translateX(300px)">
-                        <div class="float">
-                            <img src="assets/triangle.svg" class="triangle-9"
-                                style="width: 60px; height: 60px; transform: rotate(50deg);">
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!--Student Course Portal-->
@@ -513,35 +488,6 @@
 
     draw();
 
-    let angle = 0;
-    let pointsCircle = [];
-
-    function drawCircle() {
-        // Calculate point on circle
-        let x = 150 + 80 * Math.cos(angle);
-        let y = 150 + 80 * Math.sin(2*angle);
-
-        // Add to points array
-        pointsCircle.push({ x, y });
-
-        // Keep only last 100 points
-        if (pointsCircle.length > 100) pointsCircle.shift();
-
-        // Draw path
-        let pathData = '';
-        pointsCircle.forEach((p, i) => {
-            pathData += (i === 0 ? 'M' : 'L') + ` ${p.x} ${p.y}`;
-        });
-
-        document.getElementById('pathCircle').setAttribute('d', pathData);
-        document.getElementById('dotCircle').setAttribute('cx', x);
-        document.getElementById('dotCircle').setAttribute('cy', y);
-
-        angle += 0.05;
-        requestAnimationFrame(drawCircle);
-    }
-
-    drawCircle();
 </script>
 
 </HTML>
