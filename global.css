@@ -43,6 +43,59 @@ img {
     animation: dropIn 1s ease-out forwards;
 }
 
+.workShown-link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.workShown-link::before {
+    content: '→ View Project';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 30px 20px 20px;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.viewArticle::before {
+    content: '→ View Article';
+}
+
+.workShown-link:hover::before {
+    transform: translateY(0);
+}
+
+.workShown-link:hover {
+    transform: scale(1.04);
+}
+
+.workShown-link:hover .workShown {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.workShown {
+    max-width: 450px;
+    max-height: 270px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
 @keyframes dropIn {
     from {
         opacity: 0;
@@ -332,7 +385,7 @@ img {
     font-weight: 10;
 }
 
-.introText a {
+.introText a:not(#myName) {
     border-radius: 50px;
     padding: 15px 60px;
     font-family: 'Bebas Neue', sans-serif;
@@ -343,8 +396,12 @@ img {
     margin: 20px auto;
 }
 
-.introText a:hover {
+.introText a:hover:not(#myName) {
     background: #7B9E87;
+}
+
+#myName:hover {
+    color:  #9ca3af;
 }
 
 /*Mehistory*/
@@ -838,11 +895,6 @@ img {
 
 #myWork {
     overflow: hidden;
-}
-
-.workShown {
-    max-width: 450px;
-    max-height: 270px;
 }
 
 .pointGroup {
