@@ -75,7 +75,7 @@ img {
     display: flex;
 }
 
-.navbar a:hover:not(.navName)  {
+.navbar a:hover:not(.navName) {
     background-color: var(--font-color);
 }
 
@@ -967,4 +967,37 @@ footer {
     background-color: #2d2d2d;
     transform: translateY(-30px);
     padding-bottom: 10px;
+}
+
+.circle {
+    stroke: #7B9E87;
+    stroke-width: 1;
+    fill: none;
+}
+
+.line {
+    stroke: #7B9E87;
+    stroke-width: 1;
+}
+
+.wave {
+    stroke: #7B9E87;
+    stroke-width: 2;
+    fill: none;
+}
+
+.dot {
+    fill: #4A90E2;
+    r: 3;
+}
+
+.pathCircle {
+    stroke: var(--font-color);
+    stroke-width: 2;
+    fill: none;
+}
+
+.dotCircle {
+    fill: var(--font-color);
+    r: 3;
 }
