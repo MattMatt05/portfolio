@@ -966,4 +966,5 @@ footer {
     text-align: center;
     background-color: #2d2d2d;
     transform: translateY(-30px);
+    padding-bottom: 10px;
 }
