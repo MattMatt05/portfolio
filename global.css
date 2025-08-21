@@ -385,7 +385,7 @@ img {
     font-weight: 10;
 }
 
-.introText a:not(#myName) {
+.myWorkButton {
     border-radius: 50px;
     padding: 15px 60px;
     font-family: 'Bebas Neue', sans-serif;
@@ -396,7 +396,7 @@ img {
     margin: 20px auto;
 }
 
-.introText a:hover:not(#myName) {
+.myWorkButton:hover {
     background: #7B9E87;
 }
 
