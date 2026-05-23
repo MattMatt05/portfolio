@@ -33,7 +33,6 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);font-weight:
 #cosmos{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
 .nebula{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(90px);opacity:0.06}
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem 2.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:0.5px solid var(--border);background:rgba(4,4,14,0.88);backdrop-filter:blur(18px)}
 .nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:300;letter-spacing:0.06em;color:var(--text-bright);text-decoration:none;display:flex;align-items:center;gap:.6rem}
 .nav-logo-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:pulse-dot 2.5s ease-in-out infinite}
@@ -46,13 +45,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem 2.5rem;displa
 .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .nav-hamburger span{display:block;width:22px;height:0.5px;background:var(--muted);transition:all .3s}
 
-/* LAYOUT */
 .wrap{max-width:960px;margin:0 auto;padding:0 2rem;position:relative;z-index:1}
 section{padding:6rem 0}
 .section-label{font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:3rem;display:flex;align-items:center;gap:.85rem}
 .section-label::after{content:'';flex:1;height:0.5px;background:linear-gradient(90deg,var(--border),transparent)}
 
-/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding-top:80px}
 .hero-inner{display:grid;grid-template-columns:1.15fr 0.85fr;gap:4rem;align-items:center;width:100%}
 .hero-eyebrow{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1.75rem;display:flex;align-items:center;gap:.85rem}
@@ -69,7 +66,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .btn-ghost{display:inline-flex;align-items:center;gap:.55rem;color:var(--muted);border:0.5px solid var(--border);text-decoration:none;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;padding:.75rem 1.6rem;transition:all .3s}
 .btn-ghost:hover{color:var(--text-bright);border-color:rgba(91,156,246,0.4)}
 
-/* PORTRAIT */
 .hero-image{display:flex;justify-content:center;align-items:center}
 .portrait-outer{position:relative;width:260px}
 .orbit{position:absolute;border-radius:50%;border:0.5px solid var(--border);top:50%;left:50%;pointer-events:none}
@@ -90,7 +86,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .coord-label.bl{bottom:-1.8rem;left:0}
 .coord-label.tr{top:-1.8rem;right:0}
 
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
 .ablock{padding:1.75rem;border:0.5px solid var(--border);background:linear-gradient(135deg,var(--bg2),var(--bg3));position:relative;overflow:hidden;transition:border-color .4s,transform .4s}
 .ablock::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .4s}
@@ -103,7 +98,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .ablock:hover img{filter:grayscale(0%)}
 .ablock-caption{font-size:10px;color:var(--muted2);margin-top:.4rem;letter-spacing:0.08em}
 
-/* STATS */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);border:0.5px solid var(--border);margin-top:3.5rem;background:linear-gradient(135deg,var(--bg2),var(--bg3));position:relative;overflow:hidden}
 .stats-row::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),rgba(167,139,250,0.5),transparent)}
 .stat{padding:2rem 1.5rem;text-align:center;border-right:0.5px solid var(--border)}
@@ -111,7 +105,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .stat-num{font-family:var(--serif);font-size:3rem;font-weight:300;display:block;line-height:1;margin-bottom:.4rem;background:linear-gradient(135deg,var(--accent),#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .stat-label{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)}
 
-/* SKILLS */
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
 .skill-block{padding:1.5rem;border:0.5px solid var(--border);background:linear-gradient(135deg,var(--bg2),var(--bg3));position:relative;overflow:hidden;transition:border-color .4s,transform .3s}
 .skill-block::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity .4s}
@@ -123,7 +116,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .skill-tag.hot{border-color:rgba(91,156,246,0.35);color:var(--accent);background:rgba(91,156,246,0.08)}
 .skill-tag:hover{border-color:rgba(91,156,246,0.5);color:var(--text)}
 
-/* WORK GRID */
 .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border2)}
 .wcard{background:var(--bg);padding:1.75rem;position:relative;overflow:hidden;transition:background .35s}
 .wcard::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--accent-glow),transparent);opacity:0;transition:opacity .4s;pointer-events:none}
@@ -139,58 +131,116 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .wcard-link{display:inline-flex;align-items:center;gap:.4rem;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-top:.75rem;transition:gap .3s}
 .wcard:hover .wcard-link{gap:.7rem}
 
-/* FEATURED CARD — FIX: image fills left column without distortion */
-.wcard-featured{
-  grid-column:span 2;
-  padding:0;
-  background:var(--bg);
-  overflow:hidden;
-}
-.wcard-featured a{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  text-decoration:none;
-  color:inherit;
-  width:100%;
-  height:100%;
-}
-.wcard-featured-img{
-  width:100%;
-  height:100%;
-  min-height:280px;
-  object-fit:cover;
-  object-position:center top;
-  display:block;
-  margin-bottom:0;
-  filter:grayscale(50%) contrast(1.05);
-  transition:filter .5s,transform .5s;
-}
-.wcard-featured:hover .wcard-featured-img{
-  filter:grayscale(0%) contrast(1.05);
-  transform:scale(1.03);
-}
-.wcard-featured-body{
-  padding:2.25rem;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  background:var(--bg);
-  transition:background .35s;
-}
+.wcard-featured{grid-column:span 2;padding:0;background:var(--bg);overflow:hidden}
+.wcard-featured a{display:grid;grid-template-columns:1fr 1fr;text-decoration:none;color:inherit;width:100%;height:100%}
+.wcard-featured-img{width:100%;height:100%;min-height:280px;object-fit:cover;object-position:center top;display:block;margin-bottom:0;filter:grayscale(50%) contrast(1.05);transition:filter .5s,transform .5s}
+.wcard-featured:hover .wcard-featured-img{filter:grayscale(0%) contrast(1.05);transform:scale(1.03)}
+.wcard-featured-body{padding:2.25rem;position:relative;display:flex;flex-direction:column;justify-content:center;background:var(--bg);transition:background .35s}
 .wcard-featured:hover .wcard-featured-body{background:var(--bg2)}
 
-/* COURSES */
-.courses-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border2)}
-.course-card{background:var(--bg);padding:1.5rem 1.75rem;transition:background .3s;position:relative;overflow:hidden}
-.course-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);transform:scaleY(0);transition:transform .35s;transform-origin:bottom}
-.course-card:hover{background:var(--bg2)}
-.course-card:hover::before{transform:scaleY(1)}
-.course-code{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent2);margin-bottom:.4rem}
-.course-card h3{font-size:13px;font-family:var(--mono);font-weight:400;color:var(--text-bright);margin-bottom:.5rem}
-.course-card p{font-size:11.5px;color:var(--muted);line-height:1.85}
+.galaxy-intro{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;margin-bottom:2rem}
+.galaxy-intro p{font-size:13px;color:var(--muted);max-width:560px;line-height:1.9}
+.galaxy-legend{display:flex;flex-direction:column;gap:.55rem;font-size:10px;letter-spacing:0.1em;color:var(--muted)}
+.galaxy-legend-item{display:flex;align-items:center;gap:.55rem}
+.legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.legend-cs{background:#5b9cf6;box-shadow:0 0 10px #5b9cf6}
+.legend-math{background:#f7c94f;box-shadow:0 0 10px #f7c94f}
+.legend-ds{background:#a78bfa;box-shadow:0 0 10px #a78bfa}
 
-/* EXPERIENCE */
+.galaxy-stage{position:relative;width:100%;aspect-ratio:1000/750;overflow:visible}
+.planet-wrap,.plaque-grp{outline:none!important}
+.planet-wrap:focus,.planet-wrap:focus-visible,.plaque-grp:focus,.plaque-grp:focus-visible{outline:none!important}
+.galaxy-svg :focus{outline:none!important}
+.planet-text-label,.planet-text-sublabel{transition:opacity .4s}
+.galaxy-svg.focused .planet-text-label,.galaxy-svg.focused .planet-text-sublabel{opacity:0}
+.galaxy-svg{width:100%;height:100%;display:block;touch-action:manipulation}
+.gx-bg-star{fill:#fff}
+.gx-bg-star.warm{fill:#ffd9a8}
+
+.figure8-trace{fill:none;stroke:rgba(167,177,220,.42);stroke-width:.9;stroke-dasharray:3 5;transition:opacity .6s}
+.figure8-trace.dim{opacity:0}
+
+.planet-wrap{cursor:pointer}
+.planet-trail circle{transition:opacity .4s}
+
+.galaxy-back{position:absolute;top:1rem;left:1rem;z-index:8;padding:.55rem 1rem;background:rgba(7,7,18,.85);border:0.5px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .35s,color .25s,border-color .25s}
+.galaxy-back.show{opacity:1;pointer-events:auto}
+.galaxy-back:hover{color:var(--text-bright);border-color:rgba(91,156,246,.45)}
+
+.planet-readout{position:absolute;bottom:1rem;left:1rem;z-index:8;padding:.7rem 1rem;background:rgba(7,7,18,.92);border:0.5px solid var(--border);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);max-width:180px;opacity:0;pointer-events:none;transition:opacity .4s,transform .4s;transform:translateY(8px)}
+.planet-readout.show{opacity:1;pointer-events:auto;transform:none}
+.planet-readout::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,currentColor,transparent);opacity:.6}
+.planet-readout.cs{color:#5b9cf6}
+.planet-readout.math{color:#f7c94f}
+.planet-readout.ds{color:#a78bfa}
+.planet-readout-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:currentColor;margin-bottom:.3rem;display:flex;align-items:center;gap:.4rem}
+.planet-readout-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor}
+.planet-readout h4{font-family:var(--serif);font-size:1.05rem;font-weight:300;color:var(--text-bright);line-height:1.2;margin-bottom:.35rem;font-style:italic}
+.planet-readout-meta{font-family:var(--mono);font-size:9px;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;display:flex;gap:.8rem;flex-wrap:wrap}
+.planet-readout-meta strong{color:var(--text);font-weight:400}
+
+.course-detail{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%) translateY(20px);z-index:9;width:min(560px,calc(100% - 2rem));background:rgba(7,7,18,.97);border:0.5px solid rgba(91,156,246,.4);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);opacity:0;pointer-events:none;transition:opacity .35s,transform .35s;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.course-detail.show{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.course-detail.cs{border-color:rgba(91,156,246,.5)}
+.course-detail.math{border-color:rgba(247,201,79,.5)}
+.course-detail.ds{border-color:rgba(167,139,250,.5)}
+.course-detail::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;opacity:.7}
+.course-detail.cs::before{background:linear-gradient(90deg,transparent,#5b9cf6,transparent)}
+.course-detail.math::before{background:linear-gradient(90deg,transparent,#f7c94f,transparent)}
+.course-detail.ds::before{background:linear-gradient(90deg,transparent,#a78bfa,transparent)}
+.course-detail-inner{padding:1.25rem 1.5rem 1.4rem;position:relative}
+.course-detail-close{position:absolute;top:.65rem;right:.85rem;background:none;border:0.5px solid var(--border);color:var(--muted);width:24px;height:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:var(--mono);font-size:14px;line-height:1;transition:all .25s;padding:0}
+.course-detail-close:hover{color:var(--text-bright);border-color:rgba(91,156,246,.5)}
+.course-detail-header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.5rem;padding-right:2rem;flex-wrap:wrap}
+.course-detail-code{font-family:var(--mono);font-size:10px;letter-spacing:.2em;font-weight:500}
+.course-detail.cs .course-detail-code{color:#5b9cf6}
+.course-detail.math .course-detail-code{color:#f7c94f}
+.course-detail.ds .course-detail-code{color:#a78bfa}
+.course-detail h3{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--text-bright);font-style:italic;line-height:1.2;margin-bottom:.65rem}
+.course-detail p{font-size:12px;color:var(--muted);line-height:1.9}
+.course-detail-nav{display:flex;gap:.4rem;margin-top:.85rem;padding-top:.85rem;border-top:0.5px solid var(--border2)}
+.course-detail-nav button{flex:1;padding:.4rem .6rem;background:rgba(91,156,246,.04);border:0.5px solid var(--border);color:var(--muted);font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.course-detail-nav button:hover{color:var(--text-bright);border-color:rgba(91,156,246,.4);background:rgba(91,156,246,.08)}
+.course-detail-nav button:disabled{opacity:.3;cursor:not-allowed}
+
+.galaxy-hint{margin-top:1rem;font-size:10px;letter-spacing:0.12em;color:var(--muted2);text-align:center;text-transform:uppercase}
+.galaxy-hint kbd{display:inline-block;padding:.1rem .4rem;border:0.5px solid var(--border);color:var(--text);background:var(--bg2);margin:0 .15rem;font-family:var(--mono);font-size:9px}
+
+.galaxy-list{display:none;margin-top:2rem;flex-direction:column;gap:2rem}
+.galaxy-list-domain h3{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--text-bright);margin-bottom:1rem;display:flex;align-items:center;gap:.65rem;font-style:italic}
+.galaxy-list-domain h3::before{content:'';width:9px;height:9px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor}
+.galaxy-list-domain.cs h3{color:#5b9cf6}
+.galaxy-list-domain.math h3{color:#f7c94f}
+.galaxy-list-domain.ds h3{color:#a78bfa}
+.galaxy-list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border2)}
+.galaxy-list-card{background:var(--bg);padding:1.25rem 1.5rem}
+.galaxy-list-code{font-family:var(--mono);font-size:9px;letter-spacing:.18em;margin-bottom:.5rem;display:block}
+.galaxy-list-domain.cs .galaxy-list-code{color:#5b9cf6}
+.galaxy-list-domain.math .galaxy-list-code{color:#f7c94f}
+.galaxy-list-domain.ds .galaxy-list-code{color:#a78bfa}
+.galaxy-list-card h4{font-family:var(--mono);font-size:13px;font-weight:400;color:var(--text-bright);margin-bottom:.5rem}
+.galaxy-list-card p{font-size:11.5px;color:var(--muted);line-height:1.85}
+
+@media (prefers-reduced-motion: reduce){
+  .galaxy-stage{display:none}
+  .galaxy-list{display:flex}
+  .galaxy-hint{display:none}
+}
+
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.cert-card{padding:1.75rem;border:0.5px solid var(--border);background:linear-gradient(135deg,var(--bg2),var(--bg3));position:relative;overflow:hidden;transition:border-color .4s,transform .3s;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.cert-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#a78bfa,transparent);opacity:0;transition:opacity .4s}
+.cert-card:hover{border-color:rgba(167,139,250,0.4);transform:translateY(-2px)}
+.cert-card:hover::before{opacity:1}
+.cert-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.85rem;gap:1rem}
+.cert-issuer{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#a78bfa}
+.cert-date{font-size:10px;letter-spacing:0.1em;color:var(--muted2);white-space:nowrap}
+.cert-card h3{font-family:var(--serif);font-size:1.25rem;font-weight:300;color:var(--text-bright);line-height:1.2;margin-bottom:.6rem}
+.cert-card p{font-size:12px;color:var(--muted);line-height:1.85;margin-bottom:1rem;flex:1}
+.cert-verify{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#a78bfa;display:inline-flex;align-items:center;gap:.4rem;transition:gap .3s;margin-top:auto}
+.cert-card:hover .cert-verify{gap:.7rem}
+.cert-verify.muted{color:var(--muted2)}
+
 .exp-list{display:flex;flex-direction:column;gap:1px;background:var(--border2)}
 .exp-item{background:var(--bg);padding:1.75rem 2rem;display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:start;transition:background .3s;position:relative;overflow:hidden}
 .exp-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent),#a78bfa);transform:scaleY(0);transition:transform .4s;transform-origin:top}
@@ -203,7 +253,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .exp-badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
 .exp-badge{font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:.2rem .55rem;border:0.5px solid var(--border);color:var(--muted)}
 
-/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .contact-left h2{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.05;margin-bottom:1rem;color:var(--text-bright)}
 .contact-left h2 em{font-style:italic;background:linear-gradient(135deg,var(--accent),#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -229,7 +278,6 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .form-status.success{display:block;border:0.5px solid rgba(91,246,154,0.3);background:rgba(91,246,154,0.06);color:#5bf69a}
 .form-status.error{display:block;border:0.5px solid rgba(246,91,91,0.3);background:rgba(246,91,91,0.06);color:#f65b5b}
 
-/* FOOTER */
 footer{border-top:0.5px solid var(--border);padding:2rem 0}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-size:10px;color:var(--muted);letter-spacing:0.1em}
@@ -238,11 +286,9 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
 .footer-link:hover{color:var(--accent)}
 .footer-sig{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--muted)}
 
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
 .reveal.visible{opacity:1;transform:none}
 
-/* RESPONSIVE */
 @media(max-width:768px){
   .nav-links{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(4,4,14,0.97);flex-direction:column;gap:0;border-bottom:0.5px solid var(--border);z-index:99}
   .nav-links.open{display:flex}
@@ -260,9 +306,14 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
   .wcard-featured a{grid-template-columns:1fr;display:block}
   .wcard-featured-img{height:200px;min-height:unset;width:100%}
   .wcard-featured-body{padding:1.5rem}
-  .courses-grid{grid-template-columns:1fr}
+  .galaxy-intro{grid-template-columns:1fr}
+  .galaxy-legend{flex-direction:row;flex-wrap:wrap;gap:1rem}
+  .cert-grid,.galaxy-list-grid{grid-template-columns:1fr}
   .hero-btns{flex-direction:column;gap:.75rem}
   .btn-primary,.btn-ghost{justify-content:center}
+  .galaxy-stage{display:none}
+  .galaxy-list{display:flex}
+  .galaxy-hint{display:none}
 }
 @media(max-width:480px){
   .wrap{padding:0 1.25rem}
@@ -290,7 +341,8 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
     <a href="#about" onclick="closeNav()">About</a>
     <a href="#skills" onclick="closeNav()">Skills</a>
     <a href="#work" onclick="closeNav()">Work</a>
-    <a href="#courses" onclick="closeNav()">Courses</a>
+    <a href="#galaxy" onclick="closeNav()">Courses</a>
+    <a href="#certifications" onclick="closeNav()">Certs</a>
     <a href="#experience" onclick="closeNav()">Experience</a>
     <a href="#contact" onclick="closeNav()">Contact</a>
   </div>
@@ -417,10 +469,9 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
         </div>
       </div>
       <div class="skill-block reveal" style="transition-delay:.4s">
-        <h3>Languages & Certifications</h3>
+        <h3>Languages</h3>
         <div class="skill-tags">
           <span class="skill-tag hot">English</span><span class="skill-tag hot">French (DELF B1)</span><span class="skill-tag hot">Polish</span>
-          <span class="skill-tag">Microsoft Cybersecurity</span><span class="skill-tag">HTTP Training (LinkedIn)</span>
         </div>
       </div>
     </div>
@@ -431,8 +482,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
   <div class="wrap">
     <div class="section-label reveal">Selected Projects</div>
     <div class="work-grid">
-
-      <!-- FEATURED: image now fills left column correctly via grid layout -->
       <div class="wcard wcard-featured reveal">
         <a href="https://medium.com/@molskimatthew/machine-learning-model-for-credit-card-default-prediction-ffe3c8f8b9ca" target="_blank">
           <img class="wcard-featured-img" src="assets/Medium.png" alt="Credit Card Default Prediction">
@@ -445,7 +494,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
           </div>
         </a>
       </div>
-
       <div class="wcard reveal" style="transition-delay:.08s">
         <a href="https://github.com/MattMatt05/FamilyTreeSoftware" target="_blank">
           <span class="wcard-num">02</span>
@@ -456,7 +504,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
           <span class="wcard-link">View on GitHub →</span>
         </a>
       </div>
-
       <div class="wcard reveal" style="transition-delay:.16s">
         <span class="wcard-num">03</span>
         <img src="assets/sv.png" alt="Star Visualizer">
@@ -464,7 +511,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
         <h3>Star Position Mapper</h3>
         <p>Transforms raw astronomical coordinate data into polar visualizations — converting star positions into spatial displays of our local star system using mathematical modeling.</p>
       </div>
-
       <div class="wcard reveal" style="transition-delay:.24s">
         <a href="https://github.com/haovvrld/DSCI-009-Group-17-Proposal/blob/main/DSC_009_group_17_final_project.ipynb" target="_blank">
           <span class="wcard-num">04</span>
@@ -475,7 +521,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
           <span class="wcard-link">View on GitHub →</span>
         </a>
       </div>
-
       <div class="wcard reveal" style="transition-delay:.32s">
         <a href="https://elginparksecondary.com/" target="_blank">
           <span class="wcard-num">05</span>
@@ -486,7 +531,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
           <span class="wcard-link">Visit Site →</span>
         </a>
       </div>
-
       <div class="wcard reveal" style="transition-delay:.4s">
         <span class="wcard-num">06</span>
         <img src="assets/ng.png" alt="Number Game">
@@ -494,26 +538,138 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
         <h3>NIM Strategy Game</h3>
         <p>Digital NIM implementation showcasing algorithmic thinking and game theory — turn-based system with proper state management and clean code architecture.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<section id="courses">
+<section id="galaxy">
   <div class="wrap">
-    <div class="section-label reveal">Academic Coursework</div>
-    <p class="reveal" style="color:var(--muted);font-size:13px;margin-bottom:2.5rem;max-width:560px;line-height:1.9">Relevant coursework at UBC focused on machine learning, statistical modeling, software engineering, and mathematical foundations for data-driven systems.</p>
-    <div class="courses-grid">
-      <div class="course-card reveal"><div class="course-code">CPSC 330</div><h3>Applied Machine Learning</h3><p>Implemented ML algorithms for real-world problems. Covered data preprocessing, feature engineering, model selection, and evaluation using Python (scikit-learn, pandas) with reproducible ML pipelines.</p></div>
-      <div class="course-card reveal" style="transition-delay:.05s"><div class="course-code">MATH 307</div><h3>Applied Linear Algebra</h3><p>Explored vector spaces, eigenvalues, eigenvectors, and matrix decompositions. Applied to computational problems including dimensionality reduction and transformations central to machine learning.</p></div>
-      <div class="course-card reveal" style="transition-delay:.1s"><div class="course-code">CPSC 210</div><h3>Software Construction</h3><p>Developed OOP, modular design, and data abstraction in Java. Applied testing, debugging, and UML modeling for scalable, maintainable software systems.</p></div>
-      <div class="course-card reveal" style="transition-delay:.15s"><div class="course-code">STAT 201</div><h3>Statistical Inference for Data Science</h3><p>Applied hypothesis testing, confidence intervals, and estimation. Built reproducible workflows in R with emphasis on transparent statistical reasoning and reporting.</p></div>
-      <div class="course-card reveal" style="transition-delay:.2s"><div class="course-code">MATH 302</div><h3>Introduction to Probability</h3><p>Studied probability distributions, random variables, and conditional probability. Applied probabilistic models to analyze uncertainty in data science and ML contexts.</p></div>
-      <div class="course-card reveal" style="transition-delay:.25s"><div class="course-code">CPSC 110</div><h3>Computation, Programs, and Programming</h3><p>Built strong programming fundamentals through functional design, recursion, and abstraction. Focused on systematic problem solving and algorithmic thinking.</p></div>
-      <div class="course-card reveal" style="transition-delay:.3s"><div class="course-code">DSCI 100</div><h3>Introduction to Data Science</h3><p>Analyzed and visualized data using R. Performed data cleaning, transformation, and predictive modeling on real-world datasets to extract actionable insights.</p></div>
-      <div class="course-card reveal" style="transition-delay:.35s"><div class="course-code">MATH 221</div><h3>Matrix Algebra</h3><p>Learned matrix operations, systems of equations, and vector geometry — foundational knowledge for advanced linear algebra and data analysis.</p></div>
-      <div class="course-card reveal" style="transition-delay:.4s"><div class="course-code">MATH 215</div><h3>Elementary Differential Equations I</h3><p>Solved first- and second-order differential equations. Modeled dynamic systems including growth, decay, and physical processes relevant to engineering and computation.</p></div>
-      <div class="course-card reveal" style="transition-delay:.45s"><div class="course-code">MATH 200</div><h3>Calculus III</h3><p>Covered multivariable calculus including partial derivatives, multiple integrals, and vector calculus. Applied to optimization and gradient-based methods used in machine learning.</p></div>
+    <div class="section-label reveal">Course Galaxy</div>
+    <div class="galaxy-intro reveal">
+      <p>Three worlds in a three-body problem — one for each discipline that shapes my work. Select a planet to enter its system.</p>
+      <div class="galaxy-legend" aria-hidden="true">
+        <div class="galaxy-legend-item"><span class="legend-dot legend-cs"></span>Computer Science</div>
+        <div class="galaxy-legend-item"><span class="legend-dot legend-math"></span>Mathematics</div>
+        <div class="galaxy-legend-item"><span class="legend-dot legend-ds"></span>Data Science & Stats</div>
+      </div>
+    </div>
+
+    <div class="galaxy-stage reveal" id="galaxyStage" role="region" aria-label="Interactive course galaxy">
+      <svg class="galaxy-svg" id="galaxySvg" viewBox="0 0 1000 750" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <g id="galaxyBgStars"></g>
+        <path id="figure8Trace" class="figure8-trace" d=""/>
+        <g id="planetTrails"></g>
+        <g id="threePlanets"></g>
+        <g id="plaqueOrbits"></g>
+        <g id="plaques"></g>
+      </svg>
+
+      <button class="galaxy-back" id="galaxyBack" onclick="returnToSystem()">← Back to System</button>
+
+      <div class="planet-readout" id="planetReadout" aria-live="polite">
+        <div class="planet-readout-eyebrow"><span id="planetReadoutEyebrow">DOMAIN</span></div>
+        <h4 id="planetReadoutTitle">Title</h4>
+        <div class="planet-readout-meta">
+          <span><strong id="planetReadoutCount">0</strong> courses</span>
+        </div>
+      </div>
+
+      <div class="course-detail" id="courseDetail" role="dialog" aria-modal="false" aria-labelledby="courseDetailTitle">
+        <div class="course-detail-inner">
+          <button class="course-detail-close" onclick="closeCourseDetail()" aria-label="Close course details">×</button>
+          <div class="course-detail-header">
+            <span class="course-detail-code" id="courseDetailCode">CODE</span>
+          </div>
+          <h3 id="courseDetailTitle">Title</h3>
+          <p id="courseDetailDesc">Description</p>
+          <div class="course-detail-nav">
+            <button onclick="prevCourse()" id="coursePrevBtn">← Prev</button>
+            <button onclick="nextCourse()" id="courseNextBtn">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="galaxy-hint reveal"><kbd>click</kbd> a planet · <kbd>click</kbd> a course · <kbd>esc</kbd> to return</div>
+
+    <div class="galaxy-list" id="galaxyList" aria-label="Course list (accessible alternative)"></div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-label reveal">Certifications</div>
+    <div class="cert-grid">
+
+      <a class="cert-card reveal" href="https://verify.skilljar.com/c/dctke624ezyb" target="_blank" rel="noopener">
+        <div class="cert-header">
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">May 2026</span>
+        </div>
+        <h3>AI Fluency — Framework & Foundations</h3>
+        <p>Anthropic's foundational training on how to work fluently with large language models — covering core capabilities, effective prompting, and the conceptual framework for human–AI collaboration.</p>
+        <span class="cert-verify">Verify Certificate →</span>
+      </a>
+
+      <a class="cert-card reveal" href="https://verify.skilljar.com/c/vfaw7ydq6ifc" target="_blank" rel="noopener" style="transition-delay:.05s">
+        <div class="cert-header">
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">May 2026</span>
+        </div>
+        <h3>AI Capabilities and Limitations</h3>
+        <p>Deep-dive into what current LLMs can and cannot do — reasoning, factuality, alignment, and safe deployment. Practical framing for building reliable AI-assisted systems.</p>
+        <span class="cert-verify">Verify Certificate →</span>
+      </a>
+
+      <a class="cert-card reveal" href="https://verify.skilljar.com/c/uh8yvcw7ekpu" target="_blank" rel="noopener" style="transition-delay:.1s">
+        <div class="cert-header">
+          <span class="cert-issuer">Anthropic</span>
+          <span class="cert-date">May 2026</span>
+        </div>
+        <h3>AI Fluency for Students</h3>
+        <p>Student-focused track on applying AI effectively in academic work — research, writing, and learning — with emphasis on critical evaluation and intellectual integrity.</p>
+        <span class="cert-verify">Verify Certificate →</span>
+      </a>
+
+      <div class="cert-card reveal" style="transition-delay:.15s;cursor:default">
+        <div class="cert-header">
+          <span class="cert-issuer">Microsoft & LinkedIn</span>
+          <span class="cert-date">Feb 2024</span>
+        </div>
+        <h3>Career Essentials in Cybersecurity</h3>
+        <p>Microsoft and LinkedIn's career-track certification covering security principles, threat landscapes, identity and access management, incident response, and the foundations of building a defensible posture.</p>
+        <span class="cert-verify muted">Verified on LinkedIn</span>
+      </div>
+
+      <div class="cert-card reveal" style="transition-delay:.2s;cursor:default">
+        <div class="cert-header">
+          <span class="cert-issuer">LinkedIn</span>
+          <span class="cert-date">2024</span>
+        </div>
+        <h3>Cybersecurity Foundations</h3>
+        <p>Core principles of modern cybersecurity — confidentiality, integrity, and availability; common attack vectors; defensive architecture; and the foundational vocabulary for working in security teams.</p>
+        <span class="cert-verify muted">Verified on LinkedIn</span>
+      </div>
+
+      <div class="cert-card reveal" style="transition-delay:.25s;cursor:default">
+        <div class="cert-header">
+          <span class="cert-issuer">LinkedIn</span>
+          <span class="cert-date">2024</span>
+        </div>
+        <h3>The Cybersecurity Threat Landscape</h3>
+        <p>Practical survey of contemporary threat actors, attack methodologies, and emerging risk vectors — from ransomware and supply-chain attacks to AI-enabled threats and nation-state campaigns.</p>
+        <span class="cert-verify muted">Verified on LinkedIn</span>
+      </div>
+
+      <div class="cert-card reveal" style="transition-delay:.3s;cursor:default">
+        <div class="cert-header">
+          <span class="cert-issuer">France Éducation international</span>
+          <span class="cert-date">B1</span>
+        </div>
+        <h3>Diplôme d'études en langue française</h3>
+        <p>Official French government certification of French language proficiency at the B1 (independent user) level — the internationally recognized DELF awarded by the French Ministry of National Education.</p>
+        <span class="cert-verify muted">DELF B1 · Certified</span>
+      </div>
+
     </div>
   </div>
 </section>
@@ -584,7 +740,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
 <footer>
   <div class="wrap">
     <div class="footer-inner">
-      <span class="footer-copy">© 2025 Matthew Molski. All rights reserved.</span>
+      <span class="footer-copy">© 2026 Matthew Molski. All rights reserved.</span>
       <div class="footer-links">
         <a href="https://www.tiktok.com/@mathofmolski" target="_blank" class="footer-link">@mathofmolski</a>
         <a href="https://github.com/MattMatt05" target="_blank" class="footer-link">GitHub</a>
@@ -596,7 +752,6 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
 </footer>
 
 <script>
-// CURSOR
 const cur=document.getElementById('cursor'),ring=document.getElementById('cursor-ring');
 let mx=0,my=0,rx=0,ry=0;
 if(window.matchMedia('(pointer:fine)').matches){
@@ -604,11 +759,9 @@ if(window.matchMedia('(pointer:fine)').matches){
   (function animRing(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=Math.round(rx)+'px';ring.style.top=Math.round(ry)+'px';requestAnimationFrame(animRing)})();
 }
 
-// NAV
 function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
 function closeNav(){document.getElementById('navLinks').classList.remove('open')}
 
-// COSMOS
 const canvas=document.getElementById('cosmos'),ctx=canvas.getContext('2d');
 let W,H,stars=[],shooters=[];
 function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}
@@ -619,21 +772,17 @@ function newShooter(){
   const a=(Math.random()*35+10)*Math.PI/180;
   return{x:Math.random()*W*.85,y:Math.random()*H*.35,vx:Math.cos(a)*(9+Math.random()*10),vy:Math.sin(a)*(9+Math.random()*10),len:130+Math.random()*200,life:1,decay:.016+Math.random()*.012,w:Math.random()*1.5+.5,gold:Math.random()>.72}
 }
-
 setInterval(()=>shooters.push(newShooter()), 1200);
 setInterval(()=>{if(Math.random()>.45)shooters.push(newShooter())}, 1900);
 
 let animationId;
-
 function draw(t){
   ctx.clearRect(0,0,W,H);
-
   for(const s of stars){
     const fl=Math.sin(t*s.sp+s.ph)*.35+.65;
     ctx.beginPath();ctx.arc(s.x*W,s.y*H,s.r,0,Math.PI*2);
     ctx.fillStyle=s.gold?`rgba(247,201,79,${s.o*fl})`:`rgba(210,205,255,${s.o*fl})`;
     ctx.fill();
-
     if(s.r>1.1){
       ctx.save();ctx.globalAlpha=s.o*fl*.35;
       ctx.strokeStyle=s.gold?'rgba(247,201,79,1)':'rgba(170,190,255,1)';
@@ -644,7 +793,6 @@ function draw(t){
       ctx.restore();
     }
   }
-
   for(let i=shooters.length-1;i>=0;i--){
     const s=shooters[i];
     const tx=s.x-s.vx*(s.len/12),ty=s.y-s.vy*(s.len/12);
@@ -653,35 +801,24 @@ function draw(t){
     g.addColorStop(0,`rgba(${c},0)`);
     g.addColorStop(.65,`rgba(${c},${s.life*.45})`);
     g.addColorStop(1,`rgba(${c},${s.life})`);
-
     ctx.beginPath();ctx.moveTo(tx,ty);ctx.lineTo(s.x,s.y);
     ctx.strokeStyle=g;ctx.lineWidth=s.w*s.life;ctx.lineCap='round';ctx.stroke();
-
     ctx.beginPath();ctx.arc(s.x,s.y,s.w*2*s.life,0,Math.PI*2);
     ctx.fillStyle=`rgba(${c},${s.life*.9})`;ctx.fill();
-
     s.x+=s.vx;s.y+=s.vy;s.life-=s.decay;
     if(s.life<=0||s.x>W+200||s.y>H+200)shooters.splice(i,1);
   }
-
   animationId = requestAnimationFrame(draw);
 }
-
 document.addEventListener("visibilitychange", () => {
-  if (document.hidden) {
-    cancelAnimationFrame(animationId);
-  } else {
-    animationId = requestAnimationFrame(draw);
-  }
+  if (document.hidden) { cancelAnimationFrame(animationId); }
+  else { animationId = requestAnimationFrame(draw); }
 });
-
 animationId = requestAnimationFrame(draw);
 
-// SCROLL REVEAL
 const ios=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ios.unobserve(e.target)}}),{threshold:.09});
 document.querySelectorAll('.reveal').forEach(r=>ios.observe(r));
 
-// FORMSPREE
 document.getElementById('f-btn').addEventListener('click',async()=>{
   const name=document.getElementById('f-name').value.trim();
   const email=document.getElementById('f-email').value.trim();
@@ -698,6 +835,517 @@ document.getElementById('f-btn').addEventListener('click',async()=>{
     } else throw new Error();
   }catch{status.className='form-status error';status.textContent='Something went wrong. Try LinkedIn instead.';btn.disabled=false;btn.textContent='Send Message →'}
 });
+</script>
+
+<script>
+(function(){
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+const COURSES = {
+  cs: {
+    label: "Computer Science", sublabel: "CPSC", color: "#5b9cf6",
+    courses: [
+      {code:"CPSC 110", title:"Computation, Programs, and Programming", credits:4, desc:"Strong programming fundamentals through functional design, recursion, and abstraction. Focused on systematic problem solving and algorithmic thinking — the conceptual foundation behind everything else in CS."},
+      {code:"CPSC 121", title:"Models of Computation", credits:4, desc:"Physical and mathematical structures of computation: Boolean algebra and combinational logic circuits, proof techniques, functions and sequential circuits, sets and relations, finite state machines, and sequential instruction execution."},
+      {code:"CPSC 210", title:"Software Construction", credits:4, desc:"Object-oriented programming, modular design, and data abstraction in Java. Applied testing, debugging, and UML modeling to build scalable, maintainable software systems."},
+      {code:"CPSC 221", title:"Basic Algorithms and Data Structures", credits:4, desc:"Design and analysis of basic algorithms and data structures: algorithm analysis methods, searching and sorting algorithms, fundamental data structures, graphs, and concurrency."},
+      {code:"CPSC 330", title:"Applied Machine Learning", credits:3, desc:"Implemented ML algorithms for real-world problems. Covered data preprocessing, feature engineering, model selection, and evaluation using Python (scikit-learn, pandas) with reproducible ML pipelines."}
+    ]
+  },
+  math: {
+    label: "Mathematics", sublabel: "MATH", color: "#f7c94f",
+    courses: [
+      {code:"MATH 200", title:"Calculus III", credits:3, desc:"Multivariable calculus: partial derivatives, multiple integrals, and vector calculus. Applied to optimization and the gradient-based methods used in machine learning."},
+      {code:"MATH 215", title:"Elementary Differential Equations I", credits:3, desc:"First- and second-order ordinary differential equations. Modeled dynamic systems including growth, decay, and physical processes — foundational for continuous modeling."},
+      {code:"MATH 220", title:"Mathematical Proof", credits:3, desc:"Standard techniques of mathematical proof — sets, logic, direct and contrapositive proofs, quantifiers, induction, equivalence relations, functions, proof by contradiction, and cardinality. The gateway to advanced mathematics."},
+      {code:"MATH 221", title:"Matrix Algebra", credits:3, desc:"Matrix operations, systems of equations, and vector geometry — foundational knowledge for advanced linear algebra and data analysis."},
+      {code:"MATH 302", title:"Introduction to Probability", credits:3, desc:"Probability distributions, random variables, and conditional probability. Applied probabilistic models to analyze uncertainty in data science and ML contexts."},
+      {code:"MATH 307", title:"Applied Linear Algebra", credits:3, desc:"Vector spaces, eigenvalues, eigenvectors, and matrix decompositions. Applied to computational problems including dimensionality reduction and transformations central to machine learning."},
+      {code:"MATH 316", title:"Elementary Differential Equations II", credits:3, desc:"Power series methods for ODEs and an introduction to partial differential equations: boundary value problems for the heat, wave, and potential equations; separation of variables, Fourier series, and other orthogonal series."},
+      {code:"MATH 340", title:"Introduction to Linear Programming", credits:3, desc:"Linear programming problems, dual problems, the simplex algorithm, and solution of primal and dual problems with sensitivity analysis. Additional topics including game theory and applications to real optimization problems."}
+    ]
+  },
+  ds: {
+    label: "Data Science & Stats", sublabel: "DSCI", color: "#a78bfa",
+    courses: [
+      {code:"DSCI 100", title:"Introduction to Data Science", credits:3, desc:"Analyzed and visualized data using R. Performed data cleaning, transformation, and predictive modeling on real-world datasets to extract actionable insights."},
+      {code:"STAT 200", title:"Elementary Statistics for Applications", credits:3, desc:"Classical, nonparametric, and robust inferences about means, variances, and analysis of variance, using computers. Emphasis on problem formulation, assumptions, and interpretation — the applied statistics toolkit."},
+      {code:"STAT 201", title:"Statistical Inference for Data Science", credits:3, desc:"Hypothesis testing, confidence intervals, and estimation. Built reproducible workflows in R with emphasis on transparent statistical reasoning and clear reporting."}
+    ]
+  }
+};
+
+const PLANET_R = 50;
+const FOCUS_SCALE = 1.8;
+const F8_CX = 500, F8_CY = 375, F8_A = 400, F8_B = 140;
+
+function fig8(t){
+  const d = 1 + Math.sin(t)*Math.sin(t);
+  return {x: F8_CX + (F8_A * Math.cos(t)) / d, y: F8_CY + (F8_B * Math.sin(t)*Math.cos(t)) / d};
+}
+
+const trace = document.getElementById('figure8Trace');
+let traceD = "";
+for(let i = 0; i <= 280; i++){
+  const p = fig8((i/280) * Math.PI * 2);
+  traceD += (i === 0 ? "M" : "L") + p.x.toFixed(1) + "," + p.y.toFixed(1) + " ";
+}
+trace.setAttribute('d', traceD + "Z");
+
+const bgStarsG = document.getElementById('galaxyBgStars');
+for(let i = 0; i < 100; i++){
+  const c = document.createElementNS(SVG_NS, "circle");
+  c.setAttribute("cx", Math.random() * 1000);
+  c.setAttribute("cy", Math.random() * 750);
+  c.setAttribute("r", Math.random() * 0.9 + 0.2);
+  c.setAttribute("class", "gx-bg-star" + (Math.random() > .88 ? " warm" : ""));
+  c.setAttribute("opacity", Math.random() * 0.55 + 0.15);
+  bgStarsG.appendChild(c);
+}
+
+function buildCrescent(domain, color, radius){
+  const g = document.createElementNS(SVG_NS, "g");
+
+  const halo = document.createElementNS(SVG_NS, "circle");
+  halo.setAttribute("r", radius * 1.6);
+  halo.setAttribute("fill", color);
+  halo.setAttribute("opacity", ".08");
+  g.appendChild(halo);
+
+  const halo2 = document.createElementNS(SVG_NS, "circle");
+  halo2.setAttribute("r", radius * 1.25);
+  halo2.setAttribute("fill", color);
+  halo2.setAttribute("opacity", ".06");
+  g.appendChild(halo2);
+
+  const outer = document.createElementNS(SVG_NS, "circle");
+  outer.setAttribute("r", radius);
+  outer.setAttribute("fill", "none");
+  outer.setAttribute("stroke", color);
+  outer.setAttribute("stroke-width", "0.7");
+  outer.setAttribute("opacity", ".6");
+  g.appendChild(outer);
+
+  const clipId = "crescent-clip-" + domain;
+  const defs = document.createElementNS(SVG_NS, "defs");
+  const cp = document.createElementNS(SVG_NS, "clipPath");
+  cp.setAttribute("id", clipId);
+  const cpCircle = document.createElementNS(SVG_NS, "circle");
+  cpCircle.setAttribute("r", radius);
+  cp.appendChild(cpCircle);
+  defs.appendChild(cp);
+  g.appendChild(defs);
+
+  const spinG = document.createElementNS(SVG_NS, "g");
+  spinG.setAttribute("clip-path", "url(#" + clipId + ")");
+
+  const litPath = document.createElementNS(SVG_NS, "path");
+  litPath.setAttribute("d", "M 0 " + (-radius) + " A " + radius + " " + radius + " 0 0 1 0 " + radius + " A " + (radius*0.5) + " " + radius + " 0 0 0 0 " + (-radius) + " Z");
+  litPath.setAttribute("fill", color);
+  litPath.setAttribute("opacity", ".32");
+  spinG.appendChild(litPath);
+
+  const litEdge = document.createElementNS(SVG_NS, "path");
+  litEdge.setAttribute("d", "M 0 " + (-radius) + " A " + radius + " " + radius + " 0 0 1 0 " + radius);
+  litEdge.setAttribute("fill", "none");
+  litEdge.setAttribute("stroke", color);
+  litEdge.setAttribute("stroke-width", "0.9");
+  litEdge.setAttribute("opacity", ".9");
+  spinG.appendChild(litEdge);
+
+  const term = document.createElementNS(SVG_NS, "ellipse");
+  term.setAttribute("cx", "0"); term.setAttribute("cy", "0");
+  term.setAttribute("rx", radius * 0.5); term.setAttribute("ry", radius);
+  term.setAttribute("fill", "none");
+  term.setAttribute("stroke", color);
+  term.setAttribute("stroke-width", "0.6");
+  term.setAttribute("opacity", ".75");
+  spinG.appendChild(term);
+
+  g.appendChild(spinG);
+
+  const core = document.createElementNS(SVG_NS, "circle");
+  core.setAttribute("r", "2");
+  core.setAttribute("fill", color);
+  core.setAttribute("opacity", ".75");
+  g.appendChild(core);
+
+  return {g, spinG};
+}
+
+const planetsG = document.getElementById('threePlanets');
+const trailsG = document.getElementById('planetTrails');
+const planetEls = [];
+
+Object.entries(COURSES).forEach(([domain, sys], idx) => {
+  const trailG = document.createElementNS(SVG_NS, "g");
+  trailG.setAttribute("class", "planet-trail");
+  trailsG.appendChild(trailG);
+
+  const wrap = document.createElementNS(SVG_NS, "g");
+  wrap.setAttribute("class", "planet-wrap");
+  wrap.setAttribute("tabindex", "0");
+  wrap.setAttribute("role", "button");
+  wrap.setAttribute("aria-label", sys.label + " — " + sys.courses.length + " courses. Click to explore.");
+
+  const built = buildCrescent(domain, sys.color, PLANET_R);
+  wrap.appendChild(built.g);
+
+  const label = document.createElementNS(SVG_NS, "text");
+  label.setAttribute("class", "planet-text-label");
+  label.setAttribute("x", "0");
+  label.setAttribute("y", String(-(PLANET_R + 22)));
+  label.setAttribute("text-anchor", "middle");
+  label.setAttribute("style", "font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:15px;fill:#fff;pointer-events:none;letter-spacing:.03em");
+  label.textContent = sys.label;
+  wrap.appendChild(label);
+
+  const sublabel = document.createElementNS(SVG_NS, "text");
+  sublabel.setAttribute("class", "planet-text-sublabel");
+  sublabel.setAttribute("x", "0");
+  sublabel.setAttribute("y", String(PLANET_R + 22));
+  sublabel.setAttribute("text-anchor", "middle");
+  sublabel.setAttribute("style", "font-family:'DM Mono',monospace;font-size:8.5px;fill:#8887aa;pointer-events:none;letter-spacing:.22em;text-transform:uppercase");
+  sublabel.textContent = sys.courses.length + " courses";
+  wrap.appendChild(sublabel);
+
+  wrap.addEventListener('click', function(){ focusPlanet(domain); });
+  wrap.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); focusPlanet(domain); }});
+
+  planetsG.appendChild(wrap);
+
+  planetEls.push({
+    wrap: wrap, trailG: trailG, spinG: built.spinG, domain: domain, sys: sys,
+    phase: (idx / 3) * Math.PI * 2,
+    spinAngle: 0,
+    spinSpeed: domain === 'cs' ? 0.014 : (domain === 'math' ? -0.011 : 0.017),
+    trail: []
+  });
+});
+
+let focusedDomain = null;
+let activeCourseIndex = -1;
+let time = 0, lastT = 0, animId;
+const ORBIT_SPEED = 0.00011;
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function tick(ts){
+  if(!lastT) lastT = ts;
+  const dt = Math.min(ts - lastT, 100);
+  lastT = ts;
+
+  if(!focusedDomain){
+    time += dt;
+    planetEls.forEach(function(p){
+      const t = (time * ORBIT_SPEED + p.phase) % (Math.PI * 2);
+      const pt = fig8(t);
+      p.wrap.setAttribute('transform', "translate(" + pt.x.toFixed(2) + "," + pt.y.toFixed(2) + ")");
+
+      p.spinAngle += p.spinSpeed * dt;
+      p.spinG.setAttribute('transform', "rotate(" + p.spinAngle.toFixed(2) + ")");
+
+      p.trail.push({x: pt.x, y: pt.y});
+      if(p.trail.length > 30) p.trail.shift();
+      let trailHTML = '';
+      for(let i = 0; i < p.trail.length; i++){
+        const tp = p.trail[i];
+        const o = (i / p.trail.length) * 0.4;
+        const r = (i / p.trail.length) * 4;
+        trailHTML += '<circle cx="' + tp.x.toFixed(1) + '" cy="' + tp.y.toFixed(1) + '" r="' + r.toFixed(2) + '" fill="' + p.sys.color + '" opacity="' + o.toFixed(3) + '"/>';
+      }
+      p.trailG.innerHTML = trailHTML;
+    });
+  } else {
+    planetEls.forEach(function(p){
+      if(p.domain === focusedDomain){
+        p.spinAngle += p.spinSpeed * dt * 0.55;
+        p.spinG.setAttribute('transform', "rotate(" + p.spinAngle.toFixed(2) + ")");
+      }
+    });
+  }
+
+  animId = requestAnimationFrame(tick);
+}
+
+if(!reduce){
+  animId = requestAnimationFrame(tick);
+} else {
+  planetEls.forEach(function(p){
+    const pt = fig8(p.phase);
+    p.wrap.setAttribute('transform', "translate(" + pt.x + "," + pt.y + ")");
+  });
+}
+
+const plaquesG = document.getElementById('plaques');
+const backBtn = document.getElementById('galaxyBack');
+const readout = document.getElementById('planetReadout');
+
+window.focusPlanet = function(domain){
+  if(focusedDomain === domain) return;
+  if(focusedDomain) returnToSystem();
+  focusedDomain = domain;
+
+  trace.classList.add('dim');
+  document.getElementById('galaxySvg').classList.add('focused');
+
+  planetEls.forEach(function(p){
+    p.wrap.style.transition = 'transform 1s cubic-bezier(.16,1,.3,1), opacity .6s';
+    p.trailG.style.transition = 'opacity .5s';
+    p.trailG.style.opacity = '0';
+    if(p.domain === domain){
+      p.wrap.setAttribute('transform', "translate(" + F8_CX + "," + F8_CY + ") scale(" + FOCUS_SCALE + ")");
+    } else {
+      p.wrap.style.opacity = '0';
+      p.wrap.style.pointerEvents = 'none';
+    }
+  });
+
+  const sys = COURSES[domain];
+  readout.className = 'planet-readout show ' + domain;
+  document.getElementById('planetReadoutEyebrow').textContent = sys.sublabel;
+  document.getElementById('planetReadoutTitle').textContent = sys.label;
+  document.getElementById('planetReadoutCount').textContent = sys.courses.length;
+
+  backBtn.classList.add('show');
+
+  setTimeout(function(){ spawnPlaques(domain); }, 850);
+};
+
+function spawnPlaques(domain){
+  const sys = COURSES[domain];
+  const courses = sys.courses;
+  const n = courses.length;
+  const focusedR = PLANET_R * FOCUS_SCALE;
+  const innerR = focusedR + 115;
+  const outerR = focusedR + 215;
+  const useTwo = n > 5;
+
+  // Draw the visible orbit ring(s) — static, dotted, fade in
+  const orbitsG = document.getElementById('plaqueOrbits');
+  const ringRadii = useTwo ? [innerR, outerR] : [innerR + 15];
+  ringRadii.forEach(function(rr){
+    const ring = document.createElementNS(SVG_NS, "circle");
+    ring.setAttribute("cx", String(F8_CX));
+    ring.setAttribute("cy", String(F8_CY));
+    ring.setAttribute("r", String(rr));
+    ring.setAttribute("fill", "none");
+    ring.setAttribute("stroke", sys.color);
+    ring.setAttribute("stroke-width", "0.7");
+    ring.setAttribute("stroke-dasharray", "3 5");
+    ring.setAttribute("opacity", "0");
+    ring.style.transition = "opacity .6s cubic-bezier(.16,1,.3,1) 200ms";
+    orbitsG.appendChild(ring);
+    requestAnimationFrame(function(){ ring.setAttribute("opacity", ".35"); });
+  });
+
+  courses.forEach(function(c, i){
+    let r, angle;
+    if(useTwo){
+      const half = Math.ceil(n / 2);
+      if(i < half){
+        r = innerR;
+        angle = (i / half) * Math.PI * 2 - Math.PI / 2;
+      } else {
+        r = outerR;
+        const j = i - half;
+        const m = n - half;
+        angle = (j / m) * Math.PI * 2 - Math.PI / 2 + (Math.PI / m);
+      }
+    } else {
+      r = innerR + 15;
+      angle = (i / n) * Math.PI * 2 - Math.PI / 2;
+    }
+    const x = F8_CX + Math.cos(angle) * r;
+    const y = F8_CY + Math.sin(angle) * r;
+
+    const plaque = document.createElementNS(SVG_NS, "g");
+    plaque.setAttribute("class", "plaque-grp");
+    plaque.setAttribute("transform", "translate(" + x + "," + y + ")");
+    plaque.style.cursor = 'pointer';
+    plaque.style.opacity = '0';
+    plaque.style.transition = "opacity .5s cubic-bezier(.16,1,.3,1) " + (i*80) + "ms";
+    plaque.setAttribute("tabindex", "0");
+    plaque.setAttribute("role", "button");
+    plaque.setAttribute("aria-label", c.code + " — " + c.title);
+    plaque.setAttribute("data-index", String(i));
+
+    const dx = F8_CX - x, dy = F8_CY - y;
+    const dist = Math.sqrt(dx*dx + dy*dy);
+    const ux = dx / dist, uy = dy / dist;
+
+    // Anchor dot sits on the orbit ring
+    const dot = document.createElementNS(SVG_NS, "circle");
+    dot.setAttribute("cx", "0");
+    dot.setAttribute("cy", "0");
+    dot.setAttribute("r", "2.5");
+    dot.setAttribute("fill", sys.color);
+    plaque.appendChild(dot);
+
+    // Plaque dimensions: wide enough for longest course titles
+    const bracketSize = 6;
+    const bx = -95, by = -38, bw = 190, bh = 50;
+    const offsetX = -ux * (bh + 20);
+    const offsetY = -uy * (bh + 20);
+
+    // Leader line from orbit dot to plaque
+    const line = document.createElementNS(SVG_NS, "line");
+    line.setAttribute("x1", "0");
+    line.setAttribute("y1", "0");
+    line.setAttribute("x2", String(offsetX));
+    line.setAttribute("y2", String(offsetY));
+    line.setAttribute("stroke", sys.color);
+    line.setAttribute("stroke-width", "0.5");
+    line.setAttribute("opacity", ".45");
+    line.setAttribute("stroke-dasharray", "1.5 2.5");
+    plaque.appendChild(line);
+
+    // Card group — positioned outward from orbit
+    const cardG = document.createElementNS(SVG_NS, "g");
+    cardG.setAttribute("transform", "translate(" + offsetX + "," + offsetY + ")");
+
+    const card = document.createElementNS(SVG_NS, "rect");
+    card.setAttribute("x", String(bx));
+    card.setAttribute("y", String(by));
+    card.setAttribute("width", String(bw));
+    card.setAttribute("height", String(bh));
+    card.setAttribute("fill", "rgba(7,7,18,.95)");
+    card.setAttribute("stroke", sys.color);
+    card.setAttribute("stroke-width", "0.5");
+    card.setAttribute("opacity", ".9");
+    cardG.appendChild(card);
+
+    const brackets = [
+      [bx, by, bx+bracketSize, by],   [bx, by, bx, by+bracketSize],
+      [bx+bw, by, bx+bw-bracketSize, by], [bx+bw, by, bx+bw, by+bracketSize],
+      [bx, by+bh, bx+bracketSize, by+bh], [bx, by+bh, bx, by+bh-bracketSize],
+      [bx+bw, by+bh, bx+bw-bracketSize, by+bh], [bx+bw, by+bh, bx+bw, by+bh-bracketSize]
+    ];
+    brackets.forEach(function(arr){
+      const l = document.createElementNS(SVG_NS, "line");
+      l.setAttribute("x1", String(arr[0])); l.setAttribute("y1", String(arr[1]));
+      l.setAttribute("x2", String(arr[2])); l.setAttribute("y2", String(arr[3]));
+      l.setAttribute("stroke", sys.color);
+      l.setAttribute("stroke-width", "0.9");
+      l.setAttribute("opacity", ".85");
+      cardG.appendChild(l);
+    });
+
+    const codeT = document.createElementNS(SVG_NS, "text");
+    codeT.setAttribute("x", "0"); codeT.setAttribute("y", "-9");
+    codeT.setAttribute("text-anchor", "middle");
+    codeT.setAttribute("style", "font-family:'DM Mono',monospace;font-size:10px;fill:" + sys.color + ";letter-spacing:.18em;font-weight:500;pointer-events:none");
+    codeT.textContent = c.code;
+    cardG.appendChild(codeT);
+
+    const titleT = document.createElementNS(SVG_NS, "text");
+    titleT.setAttribute("x", "0"); titleT.setAttribute("y", "8");
+    titleT.setAttribute("text-anchor", "middle");
+    titleT.setAttribute("style", "font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:11px;fill:#ece9f8;pointer-events:none");
+    titleT.textContent = c.title;
+    cardG.appendChild(titleT);
+
+    plaque.appendChild(cardG);
+
+    plaque.addEventListener('click', function(){ openCourseDetail(i); });
+    plaque.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openCourseDetail(i); }});
+
+    plaquesG.appendChild(plaque);
+    requestAnimationFrame(function(){ plaque.style.opacity = '1'; });
+  });
+}
+
+const courseDetailEl = document.getElementById('courseDetail');
+function openCourseDetail(idx){
+  if(!focusedDomain) return;
+  activeCourseIndex = idx;
+  const c = COURSES[focusedDomain].courses[idx];
+  courseDetailEl.className = 'course-detail show ' + focusedDomain;
+  document.getElementById('courseDetailCode').textContent = c.code;
+  document.getElementById('courseDetailTitle').textContent = c.title;
+  document.getElementById('courseDetailDesc').textContent = c.desc;
+  document.getElementById('coursePrevBtn').disabled = false;
+  document.getElementById('courseNextBtn').disabled = false;
+}
+window.closeCourseDetail = function(){
+  courseDetailEl.classList.remove('show');
+  activeCourseIndex = -1;
+};
+window.prevCourse = function(){
+  if(!focusedDomain) return;
+  const n = COURSES[focusedDomain].courses.length;
+  openCourseDetail((activeCourseIndex - 1 + n) % n);
+};
+window.nextCourse = function(){
+  if(!focusedDomain) return;
+  const n = COURSES[focusedDomain].courses.length;
+  openCourseDetail((activeCourseIndex + 1) % n);
+};
+
+window.returnToSystem = function(){
+  if(!focusedDomain) return;
+  closeCourseDetail();
+  while(plaquesG.firstChild) plaquesG.removeChild(plaquesG.firstChild);
+  const orbitsG = document.getElementById('plaqueOrbits');
+  while(orbitsG.firstChild) orbitsG.removeChild(orbitsG.firstChild);
+
+  trace.classList.remove('dim');
+  document.getElementById('galaxySvg').classList.remove('focused');
+  readout.classList.remove('show');
+  backBtn.classList.remove('show');
+
+  planetEls.forEach(function(p){
+    p.wrap.style.opacity = '1';
+    p.wrap.style.pointerEvents = 'auto';
+    p.trailG.style.opacity = '1';
+    const t = (time * ORBIT_SPEED + p.phase) % (Math.PI * 2);
+    const pt = fig8(t);
+    p.wrap.setAttribute('transform', "translate(" + pt.x.toFixed(2) + "," + pt.y.toFixed(2) + ")");
+    setTimeout(function(){ p.wrap.style.transition = ''; }, 1100);
+  });
+
+  focusedDomain = null;
+};
+
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    if(courseDetailEl.classList.contains('show')) closeCourseDetail();
+    else if(focusedDomain) returnToSystem();
+  }
+  if(focusedDomain){
+    if(e.key === 'ArrowRight'){
+      e.preventDefault();
+      if(activeCourseIndex === -1) openCourseDetail(0);
+      else nextCourse();
+    }
+    if(e.key === 'ArrowLeft'){
+      e.preventDefault();
+      if(activeCourseIndex === -1) openCourseDetail(COURSES[focusedDomain].courses.length - 1);
+      else prevCourse();
+    }
+  }
+});
+
+document.getElementById('galaxyStage').addEventListener('click', function(e){
+  if(e.target.id === 'galaxyStage' || e.target.id === 'galaxySvg' || e.target.id === 'galaxyBgStars' || e.target.id === 'figure8Trace'){
+    if(courseDetailEl.classList.contains('show')) closeCourseDetail();
+  }
+});
+
+(function buildList(){
+  const listEl = document.getElementById('galaxyList');
+  Object.keys(COURSES).forEach(function(domain){
+    const sys = COURSES[domain];
+    const section = document.createElement('div');
+    section.className = 'galaxy-list-domain ' + domain;
+    let cards = '';
+    sys.courses.forEach(function(c){
+      cards += '<div class="galaxy-list-card"><span class="galaxy-list-code">' + c.code + '</span><h4>' + c.title + '</h4><p>' + c.desc + '</p></div>';
+    });
+    section.innerHTML = '<h3>' + sys.label + '</h3><div class="galaxy-list-grid">' + cards + '</div>';
+    listEl.appendChild(section);
+  });
+})();
+})();
 </script>
 </body>
 </html>
