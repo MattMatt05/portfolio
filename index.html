@@ -206,25 +206,36 @@ h1.display em{font-style:italic;background:linear-gradient(135deg,var(--accent) 
 .galaxy-hint{margin-top:1rem;font-size:10px;letter-spacing:0.12em;color:var(--muted2);text-align:center;text-transform:uppercase}
 .galaxy-hint kbd{display:inline-block;padding:.1rem .4rem;border:0.5px solid var(--border);color:var(--text);background:var(--bg2);margin:0 .15rem;font-family:var(--mono);font-size:9px}
 
-.galaxy-list{display:none;margin-top:2rem;flex-direction:column;gap:2rem}
-.galaxy-list-domain h3{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--text-bright);margin-bottom:1rem;display:flex;align-items:center;gap:.65rem;font-style:italic}
-.galaxy-list-domain h3::before{content:'';width:9px;height:9px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor}
+.galaxy-list{display:none;margin-top:1.5rem;flex-direction:column;gap:3rem}
+.galaxy-list-domain{position:relative}
+.galaxy-list-domain h3{font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--text-bright);margin-bottom:1.25rem;display:flex;align-items:center;gap:.7rem;font-style:italic;letter-spacing:.01em}
+.galaxy-list-domain h3::before{content:'';width:10px;height:10px;border-radius:50%;background:currentColor;box-shadow:0 0 12px currentColor;flex-shrink:0}
+.galaxy-list-domain h3::after{content:'';flex:1;height:0.5px;background:linear-gradient(90deg,currentColor,transparent);opacity:.4;margin-left:.5rem}
 .galaxy-list-domain.cs h3{color:#5b9cf6}
 .galaxy-list-domain.math h3{color:#f7c94f}
 .galaxy-list-domain.ds h3{color:#a78bfa}
-.galaxy-list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border2)}
-.galaxy-list-card{background:var(--bg);padding:1.25rem 1.5rem}
-.galaxy-list-code{font-family:var(--mono);font-size:9px;letter-spacing:.18em;margin-bottom:.5rem;display:block}
-.galaxy-list-domain.cs .galaxy-list-code{color:#5b9cf6}
-.galaxy-list-domain.math .galaxy-list-code{color:#f7c94f}
-.galaxy-list-domain.ds .galaxy-list-code{color:#a78bfa}
-.galaxy-list-card h4{font-family:var(--mono);font-size:13px;font-weight:400;color:var(--text-bright);margin-bottom:.5rem}
+.galaxy-list-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border2);border:0.5px solid var(--border2)}
+.galaxy-list-card{background:linear-gradient(135deg,var(--bg2),var(--bg3));padding:1.4rem 1.6rem;position:relative;transition:background .3s}
+.galaxy-list-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:currentColor;transform:scaleY(0);transition:transform .3s;transform-origin:bottom}
+.galaxy-list-card:hover{background:linear-gradient(135deg,var(--bg3),var(--bg4))}
+.galaxy-list-card:hover::before{transform:scaleY(1)}
+.galaxy-list-domain.cs .galaxy-list-card{color:#5b9cf6}
+.galaxy-list-domain.math .galaxy-list-card{color:#f7c94f}
+.galaxy-list-domain.ds .galaxy-list-card{color:#a78bfa}
+.galaxy-list-code{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;margin-bottom:.6rem;display:block;color:currentColor;font-weight:500}
+.galaxy-list-card h4{font-family:var(--serif);font-style:italic;font-size:1.05rem;font-weight:400;color:var(--text-bright);margin-bottom:.5rem;line-height:1.3}
 .galaxy-list-card p{font-size:11.5px;color:var(--muted);line-height:1.85}
 
 @media (prefers-reduced-motion: reduce){
   .galaxy-stage{display:none}
   .galaxy-list{display:flex}
   .galaxy-hint{display:none}
+  .galaxy-intro-desktop{display:none}
+  .galaxy-legend{display:none}
+  .galaxy-list-card[data-code="CPSC 110"],
+  .galaxy-list-card[data-code="CPSC 121"],
+  .galaxy-list-card[data-code="MATH 215"],
+  .galaxy-list-card[data-code="MATH 220"]{display:none}
 }
 
 .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
@@ -307,12 +318,17 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
   .wcard-featured-img{height:200px;min-height:unset;width:100%}
   .wcard-featured-body{padding:1.5rem}
   .galaxy-intro{grid-template-columns:1fr}
-  .galaxy-legend{flex-direction:row;flex-wrap:wrap;gap:1rem}
+  .galaxy-intro-desktop{display:none}
+  .galaxy-legend{display:none}
   .cert-grid,.galaxy-list-grid{grid-template-columns:1fr}
   .hero-btns{flex-direction:column;gap:.75rem}
   .btn-primary,.btn-ghost{justify-content:center}
   .galaxy-stage{display:none}
   .galaxy-list{display:flex}
+  .galaxy-list-card[data-code="CPSC 110"],
+  .galaxy-list-card[data-code="CPSC 121"],
+  .galaxy-list-card[data-code="MATH 215"],
+  .galaxy-list-card[data-code="MATH 220"]{display:none}
   .galaxy-hint{display:none}
 }
 @media(max-width:480px){
@@ -546,7 +562,7 @@ footer{border-top:0.5px solid var(--border);padding:2rem 0}
   <div class="wrap">
     <div class="section-label reveal">Course Galaxy</div>
     <div class="galaxy-intro reveal">
-      <p>Three worlds in a three-body problem — one for each discipline that shapes my work. Select a planet to enter its system.</p>
+      <p class="galaxy-intro-desktop">Three worlds in a three-body problem — one for each discipline that shapes my work. Select a planet to enter its system.</p>
       <div class="galaxy-legend" aria-hidden="true">
         <div class="galaxy-legend-item"><span class="legend-dot legend-cs"></span>Computer Science</div>
         <div class="galaxy-legend-item"><span class="legend-dot legend-math"></span>Mathematics</div>
@@ -1339,7 +1355,7 @@ document.getElementById('galaxyStage').addEventListener('click', function(e){
     section.className = 'galaxy-list-domain ' + domain;
     let cards = '';
     sys.courses.forEach(function(c){
-      cards += '<div class="galaxy-list-card"><span class="galaxy-list-code">' + c.code + '</span><h4>' + c.title + '</h4><p>' + c.desc + '</p></div>';
+      cards += '<div class="galaxy-list-card" data-code="' + c.code + '"><span class="galaxy-list-code">' + c.code + '</span><h4>' + c.title + '</h4><p>' + c.desc + '</p></div>';
     });
     section.innerHTML = '<h3>' + sys.label + '</h3><div class="galaxy-list-grid">' + cards + '</div>';
     listEl.appendChild(section);
